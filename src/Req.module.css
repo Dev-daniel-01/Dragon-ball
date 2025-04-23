@@ -1,0 +1,20 @@
+.wrapPage{
+    background-color: rgb(32, 38, 50);
+    width: 100vw !important;
+
+}
+
+.logoApi{
+    margin-top: 70px;
+    width: 100%;
+}
+.titleApi{
+    margin: 0;
+    margin-bottom: 10%;
+    align-items: center;
+    text-align: center;
+    color: rgb(251, 192, 45);
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
