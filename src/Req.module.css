@@ -35,7 +35,9 @@ justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
 gap: 3rem;
-padding-bottom: 3rem;}
+padding-bottom: 3rem;
+
+}
 
 .containerInput{
     display: flex;
@@ -76,4 +78,17 @@ padding-bottom: 3rem;}
         font-size: 40px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+  
 }
+
+@media (min-width: 1666px){
+    .wrapCards{
+        padding-left: 10%;
+        padding-right: 10%;
+        
+        }
+ 
+}
+
+

@@ -28,13 +28,13 @@ export default function Req(){
 
     return(
     <>
-   <Menu option01='Voltar'/>
+   <Menu option01='Voltar' option02=""/>
       
       <section className={style.wrapPage}>
       <div className={style.imageApi}>
       <img src={logoApi} alt="logoApi" className={style.logoApi} />
       </div>
-      <h1 className={style.titleApi}>Dragon Ball Api</h1>,
+      <h1 className={style.titleApi}>The Dragon Ball API</h1>,
     <div className={style.containerInput}>
     <input type="text" placeholder='Digite uma pagina de 1 a 5' value={page} onChange={(e) => setPage(e.target.value)} /> 
     {erro && <p>Pagina não encontrada</p>}

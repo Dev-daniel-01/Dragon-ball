@@ -31,5 +31,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: rgb(97, 97, 97);
+    opacity: 0.8;
     font-weight: 900;
+}
+
+.nav-link:hover{
+    opacity: 1.0;
 }

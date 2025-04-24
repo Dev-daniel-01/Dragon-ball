@@ -16,23 +16,26 @@ function App() {
      <button onClick={() => setfirst(true)}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="" /></button> */}
    <Menu option01='Início' option02='Personagens'/>
    <section className={style.Inicio}>
-   <div>
       <div className={style.primeira}>
         <img src={logo} alt="logo" className={style.logo}/>
        
         <div className={style.wrapInfo}>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore vitae omnis aliquid at, delectus voluptatem tenetur earum inventore cum incidunt quas.</p>
-        <button onClick={ () => {setAparecerBotao(true)}}>Quero ver o video</button>
-        {aparecerBotao &&   <button onClick={() => {setAparecerVideo(true)} }>Cu</button>}
+        <p className={style.paragrafoLP}>Dragon Ball é um mangá criado por Akira Toriyama e estreado em novembro de 1984 
+          na Weekly Shonen Jump. Por conta do grande sucesso, em menos de 2 anos recebeu uma adaptação animada em fevereiro de 
+          1986 pela Toei Animation, e mais tarde, em abril de 1989,a adaptação da segunda parte em mangá pelo mesmo estúdio. Anos mais tarde, 
+          recebeu uma animação original em junho de 2015 nomeada e conhecida como Dragon Ball Super. A história conta a vida de Son Goku e seus amigos.</p>
+        <button className={style.btAparecerB} onClick={ () => {setAparecerBotao(true)}}>Quero ver o filme!</button>
+       
+        </div>
         </div>
        
-       <div className={style.Aparecervideo}>
-       {aparecerVideo && <iframe width="560" height="315" src="https://www.youtube.com/embed/JI6LlX1GzEU?si=85bmQR2-sG1bmHLL" title="YouTube video player" 
-         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
+       <div className={style.AparecerVideo}>
+       {aparecerBotao &&   <button className={style.btAparecerV} onClick={() => {setAparecerVideo(true); } }>Tenho certeza de quero ver!</button>}
+       {aparecerVideo && <iframe width="90%" height="200" src="https://www.youtube.com/embed/bPXQJF9WIR8?si=uyLZxm0_2dpLyGqe&amp;start=3" 
+       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
        </div>
-      </div>
-   </div>
+      
    </section>
    
   

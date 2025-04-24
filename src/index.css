@@ -28,3 +28,13 @@ input::placeholder{
     opacity: 0.6;
    
 }
+
+@media (min-width: 600px) {
+
+   input{
+    transform: scale(1.0);
+   }
+
+}
+
+
