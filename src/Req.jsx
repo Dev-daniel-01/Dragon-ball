@@ -8,12 +8,12 @@ import logoApi from './assets/images/logo_dragonballapi.webp'
 
 export default function Req(){
     const[data, setData] = useState([])
-    const [page, setPage] = useState("1")
+    const [page, setPage] = useState("")
 
     const[erro, setErro] = useState(false)
     
     useEffect(() => {
-      apiDB.get(`/characters?page=1`).then((res) => {
+      apiDB.get(`/characters?page=${page}`).then((res) => {
         setData(res.data.items)
         console.log(res.data.items)       
 
@@ -33,12 +33,13 @@ export default function Req(){
       <section className={style.wrapPage}>
       <div className={style.imageApi}>
       <img src={logoApi} alt="logoApi" className={style.logoApi} />
-
       </div>
       <h1 className={style.titleApi}>Dragon Ball Api</h1>,
-    
-      <input type="text" placeholder='Digite uma pagina de 1 a 5' value={page} onChange={(e) => setPage(e.target.value)} /> 
-      {erro && <p>Pagina não encontrada</p>}
+    <div className={style.containerInput}>
+    <input type="text" placeholder='Digite uma pagina de 1 a 5' value={page} onChange={(e) => setPage(e.target.value)} /> 
+    {erro && <p>Pagina não encontrada</p>}
+    </div>
+      
 
 
 

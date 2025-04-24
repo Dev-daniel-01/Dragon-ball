@@ -1,9 +1,15 @@
 .imgCard{
-    min-height: 400px;
-    max-height: 400px;
-    
-
+     height: 300px;
+     width: auto;
+    z-index: 800;
+    transform: scale(1.1);
+    transition: all 600ms ease-in-out;
 }
+
+.imgCard:hover{
+    transform: scale(1.4);
+  
+  }
 
 .cardsEstilo{
     width: 280px;
@@ -39,11 +45,12 @@
  font-weight: 800;
  padding-bottom: 0.5rem;
  text-align: center;
+ z-index: 800;
 }
 
 .titleDesc{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     
 }

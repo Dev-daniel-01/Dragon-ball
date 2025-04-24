@@ -17,9 +17,10 @@
     height: auto;
    
 }
+
 .titleApi{
     margin: 0;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     align-items: center;
     text-align: center;
     color: rgb(251, 192, 45);
@@ -35,3 +36,44 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 3rem;
 padding-bottom: 3rem;}
+
+.containerInput{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+
+@media (min-width: 800px) {
+    .imageApi{
+        margin-top: 110px;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .logoApi{
+    
+        width: 780px;
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 600px) {
+
+    .titleApi{
+        margin: 0;
+        margin-bottom: 2%;
+        align-items: center;
+        text-align: center;
+        color: rgb(251, 192, 45);
+        font-weight: 900;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
