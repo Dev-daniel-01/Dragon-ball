@@ -15,6 +15,7 @@ function App() {
      {/* {first ? <nav>batata</nav>: <nav>Arroz</nav>}
      <button onClick={() => setfirst(true)}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="" /></button> */}
    <Menu option01='Início' option02='Personagens'/>
+   <section className={style.Inicio}>
    <div>
       <div className={style.primeira}>
         <img src={logo} alt="logo" className={style.logo}/>
@@ -32,6 +33,9 @@ function App() {
        </div>
       </div>
    </div>
+   </section>
+   
+  
    
     </>
   )

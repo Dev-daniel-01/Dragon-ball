@@ -1,12 +1,21 @@
 .wrapPage{
-    background-color: rgb(32, 38, 50);
-    width: 100vw !important;
-
-}
-
-.logoApi{
-    margin-top: 70px;
+    
     width: 100%;
+    height: auto;
+}
+.imageApi{
+    margin-top: 70px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.logoApi{
+  margin-top: 10px;
+    width: 100%;
+    height: auto;
+   
 }
 .titleApi{
     margin: 0;
@@ -18,3 +27,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.wrapCards{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 3rem;
+padding-bottom: 3rem;}

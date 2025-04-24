@@ -31,8 +31,10 @@ export default function Req(){
    <Menu option01='Voltar'/>
       
       <section className={style.wrapPage}>
-      
+      <div className={style.imageApi}>
       <img src={logoApi} alt="logoApi" className={style.logoApi} />
+
+      </div>
       <h1 className={style.titleApi}>Dragon Ball Api</h1>,
     
       <input type="text" placeholder='Digite uma pagina de 1 a 5' value={page} onChange={(e) => setPage(e.target.value)} /> 
@@ -41,14 +43,16 @@ export default function Req(){
 
 
       <div className={style.wrapCards}>
-    
+      
       {data.map((item, index) => {
           return(
               <div key={index}>
-                  <Card name={item.name} image={item.image} ki={item.ki} maxKi={item.maxKi} race={item.race} gender={item.gender} description={item.description} affiliation={item.affiliation}/>
+                  <Card name={item.name} image={item.image} ki={item.ki} maxKi={item.maxKi} race={item.race} gender={item.gender} affiliation={item.affiliation}/>
               </div>
           )
       })}
+    
+      
       </div>
      </section>
     </>
