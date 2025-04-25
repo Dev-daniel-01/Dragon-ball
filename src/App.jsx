@@ -20,10 +20,9 @@ function App() {
         <img src={logo} alt="logo" className={style.logo}/>
        
         <div className={style.wrapInfo}>
-        <p className={style.paragrafoLP}>Dragon Ball é um mangá criado por Akira Toriyama e estreado em novembro de 1984 
-          na Weekly Shonen Jump. Por conta do grande sucesso, em menos de 2 anos recebeu uma adaptação animada em fevereiro de 
-          1986 pela Toei Animation, e mais tarde, em abril de 1989,a adaptação da segunda parte em mangá pelo mesmo estúdio. Anos mais tarde, 
-          recebeu uma animação original em junho de 2015 nomeada e conhecida como Dragon Ball Super. A história conta a vida de Son Goku e seus amigos.</p>
+        <p className={style.paragrafoLP}>Dragon Ball é um mangá criado por Akira Toriyama, lançado em novembro de 1984 na revista Weekly Shonen Jump. Devido ao enorme sucesso, a obra ganhou uma adaptação 
+          para anime em fevereiro de 1986, produzida pela Toei Animation. Posteriormente, em abril de 1989, o estúdio também adaptou a segunda parte do mangá. Anos depois, em junho de 2015, foi lançada uma nova 
+          animação original intitulada Dragon Ball Super. A história acompanha a vida de Son Goku e suas aventuras ao lado de seus amigos.</p>
         <button className={style.btAparecerB} onClick={ () => {setAparecerBotao(true)}}>Quero ver o filme!</button>
        
         </div>
@@ -36,9 +35,12 @@ function App() {
        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>}
        </div>
       
+  
    </section>
    
-  
+   {/* <footer>
+        <p>a</p>
+      </footer> */}
    
     </>
   )
