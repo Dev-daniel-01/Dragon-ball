@@ -44,7 +44,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg, rgb(251, 192, 45), rgb(181, 36, 36));
+    background: linear-gradient(90deg, rgb(251, 192, 45), rgb(181, 36, 36), rgb(17, 17, 109));
     transition: width 1.0s ease-in-out;
 }
 
