@@ -5,6 +5,7 @@ import style from "./Req.module.css";
 import { Menu } from "./components/menu";
 
 import logoApi from "./assets/images/logo_dragonballapi.webp";
+import { Footer } from "./components/footer";
 
 export default function Req() {
   const [data, setData] = useState([]);
@@ -64,6 +65,7 @@ export default function Req() {
           })}
         </div>
       </section>
+      <Footer></Footer>
     </>
   );
 }

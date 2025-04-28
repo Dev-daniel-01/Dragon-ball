@@ -6,7 +6,9 @@ import style from './App.module.css'
 
 import {Menu} from './components/menu.jsx'
 
+
 import luta from "./assets/images/luta.mp4";
+import { Footer } from "./components/footer.jsx";
 
 function App() {
   const [aparecerVideo, setAparecerVideo] = useState(false)
@@ -45,9 +47,7 @@ function App() {
   
    </section>
    
-   {/* <footer>
-        <p>a</p>
-      </footer> */}
+  <Footer></Footer>
    
     </>
   )
