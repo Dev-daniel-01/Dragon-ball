@@ -28,6 +28,16 @@ export default function Req() {
       });
   }, [page]);
 
+
+  const handlePageChange = (e) => {
+    const value = e.target.value;
+    if (!isNaN(value) && value >= 0 && value <= 6) {
+      setPage(value);
+      setErro(false); 
+    } else {
+      setErro(true); 
+    }
+  };
   return (
     <>
       <Menu option01="Voltar" option02="" />
@@ -43,9 +53,10 @@ export default function Req() {
             type="text"
             placeholder="Digite uma pagina de 1 a 6"
             value={page}
-            onChange={(e) => setPage(e.target.value)}
+            onChange={handlePageChange}
+            // onChange={(e) => setPage(e.target.value)}
           />
-          {erro && <p>Pagina não encontrada</p>}
+          {erro && <p className={style.pErro}>Pagina não encontrada</p>}
         </div>
         <div className={style.wrapCards}>
           {data.map((item, index) => {

@@ -44,7 +44,15 @@ padding-bottom: 3rem;
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
     margin-bottom: 3%;
+}
+
+.pErro{
+    font-family: 'Oxanium', cursive; 
+    border-bottom: 2px solid red;
+    
 }
 
 
